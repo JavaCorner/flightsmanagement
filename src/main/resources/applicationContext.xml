@@ -65,4 +65,6 @@
 
     <bean name="loggingAspect1" class = "com.ab.flightsmanagement.aspects.LoggingAspect1"/>
     <bean name="loggingAspect2" class = "com.ab.flightsmanagement.aspects.LoggingAspect2"/>
+    <bean name="cachingAspect" class = "com.ab.flightsmanagement.aspects.CachingAspect"/>
+    <bean name="exceptionAspect" class = "com.ab.flightsmanagement.aspects.ExceptionAspect"/>
 </beans>

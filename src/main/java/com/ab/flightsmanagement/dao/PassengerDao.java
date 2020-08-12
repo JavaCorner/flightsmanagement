@@ -7,4 +7,5 @@ import com.ab.flightsmanagement.domain.Passenger;
  */
 public interface PassengerDao {
     Passenger getPassenger(int id);
+    void insert(Passenger passenger);
 }
