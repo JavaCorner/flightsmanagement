@@ -1,3 +1,4 @@
+import com.ab.flightsmanagement.dao.PassengerDao;
 import com.ab.flightsmanagement.domain.Flight;
 import com.ab.flightsmanagement.domain.Passenger;
 import com.ab.flightsmanagement.domain.Ticket;
@@ -25,6 +26,11 @@ public class FlightsManagement {
 
         Ticket ticket = (Ticket) context.getBean("ticket");
         ticket.setNumber("0987654321");
+
+        PassengerDao passengerDaoImpl =
+                (PassengerDao) context.getBean("passengerDaoImpl");
+        passengerDaoImpl.getPassenger(1).print();
+        passengerDaoImpl.getPassenger(1).print();
 
         context.close();
     }
