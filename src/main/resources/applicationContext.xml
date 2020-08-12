@@ -4,10 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.xsd"
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
        xmlns:aop="http://www.springframework.org/schema/aop">
 
-    <!--<aop:aspectj-autoproxy/>-->
+    <aop:aspectj-autoproxy/>
 
     <bean id="jim" class ="com.ab.flightsmanagement.domain.Passenger">
         <property name="name" value="Jim"/>
@@ -40,4 +42,7 @@
         <property name="passenger" ref="jim"/>
         <property name="number" value="1234567890"/>
     </bean>
+
+    <bean name="loggingAspect1" class = "com.ab.flightsmanagement.aspects.LoggingAspect1"/>
+    <bean name="loggingAspect2" class = "com.ab.flightsmanagement.aspects.LoggingAspect2"/>
 </beans>
