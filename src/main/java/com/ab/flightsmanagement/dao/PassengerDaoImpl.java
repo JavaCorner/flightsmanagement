@@ -2,7 +2,6 @@ package com.ab.flightsmanagement.dao;
 
 import com.ab.flightsmanagement.domain.Passenger;
 import com.ab.flightsmanagement.exceptions.CountryDoesNotExistException;
-import jdk.nashorn.internal.runtime.ScriptObject;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
